@@ -1,0 +1,12 @@
+.card {
+  img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  box-shadow: 2px 2px 5px 2px gray;
+}
+.content {
+  padding: 5px 15px;
+}
