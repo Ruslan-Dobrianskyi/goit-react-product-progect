@@ -1,11 +1,39 @@
 .list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   list-style: none;
   padding: 20px 0;
   margin: 0 auto;
   max-width: 90%;
   gap: 10px;
+
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid gray;
+
+    width: 300px;
+
+    border-radius: 20px;
+    background-color: rgb(181, 86, 183);
+    color: white;
+    font-weight: bold;
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+      box-shadow: 2px 2px 5px 2px gray;
+      transition: 0.3s;
+      transform: scale(1.05);
+      z-index: 1;
+      position: relative;
+      border-radius: 10px;
+    }
+  }
 }
 
 .header {
@@ -20,5 +48,26 @@
   button {
     font-size: 2rem;
     border-radius: 20px;
+  }
+}
+
+.input {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin-right: 10px;
+  font-size: 20px;
+  width: 300px;
+
+  &:focus {
+    outline: 2px solid rgb(181, 86, 183);
+    border-radius: 10px;
+    transition: 0.3s;
+    transform: scale(1.05);
+    z-index: 1;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 2px gray;
   }
 }
